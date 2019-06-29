@@ -13,6 +13,12 @@
 
       <input type="text" name="email" placeholder="email" value="" />
       <p>Email address must be a valid address like me@mydomain.com</p>
+
+      <input type="password" name="password" placeholder="password" value="" />
+      <p>
+        Password must be alphanumeric (@, _ and - are also allowed) and be 8-20
+        characters long
+      </p>
     </form>
   </body>
 </html>;
