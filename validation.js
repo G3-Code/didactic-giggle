@@ -10,6 +10,9 @@
     <form>
       <input type="text" name="username" placeholder="username" value="" />
       <p>User name must be and contain 5-12 characters</p>
+
+      <input type="text" name="email" placeholder="email" value="" />
+      <p>Email address must be a valid address like me@mydomain.com</p>
     </form>
   </body>
 </html>;
