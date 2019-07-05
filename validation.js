@@ -7,6 +7,9 @@
   </head>
   <body>
     <h1>Validations</h1>
-    <form action=""></form>
+    <form>
+      <input type="text" name="username" placeholder="username" value="" />
+      <p>User name must be and contain 5-12 characters</p>
+    </form>
   </body>
 </html>;
