@@ -2,19 +2,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ccc;
+  font-size: small;
 }
 .input-type {
   width: 100%;
   border-radius: 5px;
   height: 30px;
+  border: 1px solid #ccc;
+  outline: none !important;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border: 1px solid red;
+  align-items: flex-start;
   border-radius: 5px;
   width: 25vw;
 }
@@ -23,5 +27,5 @@ form {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
