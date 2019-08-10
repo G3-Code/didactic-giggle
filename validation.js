@@ -5,3 +5,5 @@ let pattern = {
   telephone: /^\d{11}$/g,
   slug: /[a-z]/
 };
+
+var inputTypes = document.querySelectorAll(".input-type");
