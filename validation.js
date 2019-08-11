@@ -7,3 +7,10 @@ let pattern = {
 };
 
 var inputTypes = document.querySelectorAll(".input-type");
+inputTypes.forEach(input => {
+  input.addEventListener("keyup", e => {
+    if (RegExp.test(pattern[e.target.name])) {
+      console.log("Pattern matches");
+    }
+  });
+});
