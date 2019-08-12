@@ -6,11 +6,15 @@ let pattern = {
   slug: /[a-z]/
 };
 
-var inputTypes = document.querySelectorAll(".input-type");
+//validate the regex
+function validate(field, regex) {
+  console.log(regex.test(field.value));
+}
+
+// get the nodes and add event listeners
+let inputTypes = document.querySelectorAll(".input-type");
 inputTypes.forEach(input => {
   input.addEventListener("keyup", e => {
-    if (RegExp.test(pattern[e.target.name])) {
-      console.log("Pattern matches");
-    }
+    validate(e.target, pattern(e.target.name));
   });
 });
