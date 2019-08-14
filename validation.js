@@ -15,6 +15,6 @@ function validate(field, regex) {
 let inputTypes = document.querySelectorAll(".input-type");
 inputTypes.forEach(input => {
   input.addEventListener("keyup", e => {
-    validate(e.target, pattern(e.target.name));
+    validate(e.target, pattern[e.target.name]);
   });
 });
