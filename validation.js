@@ -8,7 +8,11 @@ let pattern = {
 
 //validate the regex
 function validate(field, regex) {
-  console.log(regex.test(field.value));
+  if (regex.test(field.value)) {
+    field.style.border = "2px solid green";
+  } else {
+    field.style.border = "2px solid orange";
+  }
 }
 
 // get the nodes and add event listeners
