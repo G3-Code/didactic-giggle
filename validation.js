@@ -1,7 +1,7 @@
 let pattern = {
-  username: /[a-z]/,
+  username: /^[a-z\d]{5,12}$/i,
   email: /[a-z]/,
-  password: /[a-z]/,
+  password: /[\w@-]{8,20}/,
   telephone: /^\d{11}$/g,
   slug: /[a-z]/
 };
@@ -9,9 +9,9 @@ let pattern = {
 //validate the regex
 function validate(field, regex) {
   if (regex.test(field.value)) {
-    field.style.border = "2px solid green";
+    field.className = "valid";
   } else {
-    field.style.border = "2px solid orange";
+    field.className = "invalid";
   }
 }
 

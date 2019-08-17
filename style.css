@@ -30,3 +30,11 @@ form {
   justify-content: center;
   align-items: flex-start;
 }
+
+.valid {
+  border: 1px solid green;
+}
+
+.invalid {
+  border: 1px solid orange;
+}
