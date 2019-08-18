@@ -3,7 +3,7 @@ let pattern = {
   email: /[a-z]/,
   password: /[\w@-]{8,20}/,
   telephone: /^\d{11}$/g,
-  slug: /[a-z]/
+  slug: /[\w]{8,20}/i
 };
 
 //validate the regex
