@@ -1,6 +1,6 @@
 let pattern = {
   username: /^[a-z\d]{5,12}$/i,
-  email: /[a-z]/,
+  email: /[a-z\d.]+@[a-z\d]+.([a-z]+)(\.[a-z]+)*/i,
   password: /[\w@-]{8,20}/,
   telephone: /^\d{11}$/g,
   slug: /[a-z\d-]{8,20}/i
