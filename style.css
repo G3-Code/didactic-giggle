@@ -38,3 +38,9 @@ form {
 .invalid {
   border: 1px solid orange;
 }
+
+input + p {
+  opacity: 0;
+  color: orange;
+  height: 0;
+}
